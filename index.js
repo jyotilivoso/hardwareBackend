@@ -13,7 +13,7 @@ app.use(cors({
 app.use(express.json())   
 app.use("/api",router)
 app.use("/",(req,res)=>{
-    res.json({"server runnu"});
+    res.json({message: "Server running"});
 })
 const PORT=8080 || process.env.PORT
 this
